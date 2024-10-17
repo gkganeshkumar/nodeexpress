@@ -9,6 +9,7 @@ app.get("/",(req,res)=>{
     res.json({msg:"Hello node"});
 });
 
+
 app.listen(PORT,()=>{
     console.log('The server is  running at http://localhost:${PORT}');
 });            
