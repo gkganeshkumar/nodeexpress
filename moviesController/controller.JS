@@ -1,3 +1,6 @@
+
+
+
 export const movieIndex =(req,res)=>{
     res.send("Get all movies list")
    };
