@@ -1,26 +1,21 @@
 import express from "express";
+import {movieCreat,movieDelete,movieUpdate,movieIndex} from "./moviesController/controller";
 
-const route =express.Router();
+const router =express.Router();
 
 
 // get data
-route.get('/movies',()=>{
-
-})
+router.get('/',movieIndex);
 
 //creat data
-route.post('/movies',()=>{
-
-})
+router.post('/',movieCreat);
 
 //updata data
 
-route.put('/movies/:id',()=>{
-
-})
+router.put('/:id',movieUpdate);
 
 //delete data
 
-route.delete('/movies/:id',()=>{
-    
-})
+router.delete('/:id',movieDelete)
+        
+export default router;
